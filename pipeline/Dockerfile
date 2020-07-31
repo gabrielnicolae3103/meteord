@@ -1,8 +1,9 @@
-FROM abernix/meteord:base
+FROM abernix/meteord:node-${NODE_VERSION}-base
 LABEL maintainer="gabriel.nicolae313@gmail.com"
 
 ARG NODE_VERSION
 ENV NODE_VERSION ${NODE_VERSION:-12.16.1}
+ENV PATH="/opt/nodejs/bin:${PATH}"
 ONBUILD ENV NODE_VERSION ${NODE_VERSION:-12.16.1}
 
 ONBUILD COPY ./ /app

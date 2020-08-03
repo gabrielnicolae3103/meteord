@@ -1,4 +1,4 @@
-FROM abernix/meteord:node-8.11.3-base
+FROM gabrielnicolae3103/meteord:base
 LABEL maintainer="gabriel.nicolae313@gmail.com"
 
 ARG NODE_VERSION

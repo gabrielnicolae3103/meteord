@@ -1,4 +1,4 @@
-FROM gabrielnicolae3103/meteord:base
+FROM gabrielnicolae313/meteord:base
 LABEL maintainer="gabriel.nicolae313@gmail.com"
 
 ARG NODE_VERSION

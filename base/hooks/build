@@ -2,5 +2,5 @@
 
 set -e
 
-docker build --build-arg "NODE_VERSION=$NODE_VERSION" -t "gabrielnicolae313/meteord:node-$NODE_VERSION-base" ../ && \
+docker build --build-arg "NODE_VERSION=$NODE_VERSION" -t "gabrielnicolae313/meteord:node-$NODE_VERSION-base" . && \
   docker tag "gabrielnicolae313/meteord:node-$NODE_VERSION-base" gabrielnicolae313/meteord:base

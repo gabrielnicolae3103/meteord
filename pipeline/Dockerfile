@@ -4,8 +4,7 @@ LABEL maintainer="gabriel.nicolae313@gmail.com"
 ARG NODE_VERSION
 ENV NODE_VERSION ${NODE_VERSION:-12.16.1}
 ENV PATH="/opt/nodejs/bin:${PATH}"
-ONBUILD ENV NODE_VERSION ${NODE_VERSION:-12.16.1}
+ENV NODE_VERSION ${NODE_VERSION:-12.16.1}
 
-ONBUILD COPY ./ /app
-ONBUILD RUN bash $METEORD_DIR/lib/install_meteor.sh
-ONBUILD RUN bash $METEORD_DIR/lib/install_mup.sh
+RUN bash $METEORD_DIR/lib/install_meteor.sh
+RUN bash $METEORD_DIR/lib/install_mup.sh

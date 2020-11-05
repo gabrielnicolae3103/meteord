@@ -1,3 +1,3 @@
 set -e
 
-npm install --global mup
+npm install --global mup@1.5.1
